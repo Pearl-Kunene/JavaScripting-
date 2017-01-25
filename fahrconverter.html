@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+<script language="Javascript" type="text/javasxcript">
+
+function converter
+{
+	var degCent;
+	degCent = 5/9 * (degFahr - 32)
+	
+	return degCent;
+}
+
+var degFahr = new Array(212,32,-459.15);
+var degCent = new Array();
+var i;
+
+for (i = 0; i <= 2; i++)
+{
+	degCent[i] = converter(degFahr[i]);
+	}
+	
+	for (i = 2; i >= 0; i--)
+	{
+		document.write("Value " + i + " was " + degFahr[i] + " degrees Fahreheit");
+		document.write("which is " + degCent[i] + " degrees centigrade<br/>");
+}
+</script>
+</body>
+</html>
